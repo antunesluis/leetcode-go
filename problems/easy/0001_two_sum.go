@@ -1,13 +1,15 @@
-package two_sum
+package easy
 
 func twoSum(nums []int, target int) []int {
-	seen := make(map[int]int)
+	visitados := make(map[int]int)
+
 	for i, num := range nums {
-		complement := target - num
-		if idx, ok := seen[complement]; ok {
-			return []int{idx, i}
+		complemento := target - num
+		// Verifica primeiro se o complemento existe no map
+		if j, existe := visitados[complemento]; existe && j != i {
+			return []int{j, i}
 		}
-		seen[num] = i
+		visitados[num] = i
 	}
-	return nil
+	return []int{}
 }
