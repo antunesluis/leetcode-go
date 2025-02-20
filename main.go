@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/seu-usuario/leetcode-go/problems/course"
+	"github.com/seu-usuario/leetcode-go/problems/algorithms"
 )
 
 func main() {
@@ -12,7 +12,7 @@ func main() {
 	testCases := []int{1, 7, 19, 10}
 
 	for _, target := range testCases {
-		result := course.BinarySearch(nums, target)
+		result := algorithms.BinarySearch(nums, target)
 		if result != -1 {
 			fmt.Printf("Número %d encontrado no índice %d\n", target, result)
 		} else {

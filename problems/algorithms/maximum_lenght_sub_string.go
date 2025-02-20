@@ -1,4 +1,4 @@
-package course
+package algorithms
 
 // Implementação exemplo para exercicios de Sliding Window
 func maximumLengthSubstring(s string) int {

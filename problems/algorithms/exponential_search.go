@@ -1,4 +1,4 @@
-package course
+package algorithms
 
 // Busca binária corrigida
 
