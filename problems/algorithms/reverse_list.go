@@ -1,10 +1,5 @@
 package algorithms
 
-type ListNode struct {
-	data interface{}
-	next *ListNode
-}
-
 // ReverseList inverte uma lista encadeada
 func ReverseList(head *ListNode) *ListNode {
 	// Nova lista invertida (será o next com valor ponteiro nil do novo fim da lista)
@@ -12,10 +7,10 @@ func ReverseList(head *ListNode) *ListNode {
 
 	for head != nil {
 		// Armazena o próximo nó
-		nextNode := head.next
+		nextNode := head.Next
 
 		// Redireciona o ponteiro next do nó atual
-		head.next = newList
+		head.Next = newList
 
 		// Atualiza newList para o nó atual
 		newList = head

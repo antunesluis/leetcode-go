@@ -1,7 +1,7 @@
 package algorithms
 
 // Implementação exemplo para exercicios de Sliding Window
-func maximumLengthSubstring(s string) int {
+func MaximumLengthSubstring(s string) int {
 	l, r := 0, 0
 	_max := 1
 	counter := make(map[byte]int)
